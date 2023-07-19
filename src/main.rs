@@ -141,10 +141,11 @@ fn main() {
     noecho();
 
     start_color();
+    use_default_colors();
     init_pair(NORMAL, COLOR_WHITE, COLOR_BLACK);
-    init_pair(GREEN, COLOR_GREEN, COLOR_BLACK);
-    init_pair(YELLOW, COLOR_YELLOW, COLOR_BLACK);
-    init_pair(RED, COLOR_RED, COLOR_BLACK);
+    init_pair(GREEN, COLOR_BLACK, COLOR_GREEN);
+    init_pair(YELLOW, COLOR_BLACK, COLOR_YELLOW);
+    init_pair(RED, COLOR_BLACK, COLOR_RED);
 
     game.start();
 }
